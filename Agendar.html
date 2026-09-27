@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendar servicio | Parabrisas y Cauchos La Y</title>
+
+    <link rel="stylesheet" href="css/Agendar.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <a href="index.html" class="logo">
+            <img src="Imagenes/LogoParabrisasYCauchosLaY.png"
+                 alt="Parabrisas y Cauchos La Y">
+        </a>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="NosotrosParabrisas.html">Nosotros</a>
+            <a href="Agendar.html" class="activo">Agendar</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="agendar">
+
+            <div class="agendar-contenido">
+
+                <div class="texto-agendar">
+
+                    <span>ATENCIÓN PERSONALIZADA</span>
+
+                    <h1>Agenda tu servicio</h1>
+
+                    <p>
+                        Completa el siguiente formulario con tus datos
+                        y cuéntanos qué servicio necesitas.
+                    </p>
+
+                    <p>
+                        Al finalizar, podrás continuar directamente
+                        por WhatsApp con nuestro equipo.
+                    </p>
+
+                </div>
+
+
+                <form id="formulario-agendar" class="formulario-agendar">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ej: 3116218230"
+                            required>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="vehiculo">Vehículo</label>
+
+                        <input
+                            type="text"
+                            id="vehiculo"
+                            name="vehiculo"
+                            placeholder="Ej: Chevrolet Onix 2022"
+                            required>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="servicio">Servicio que necesitas</label>
+
+                        <select id="servicio" name="servicio" required>
+
+                            <option value="">
+                                Selecciona un servicio
+                            </option>
+
+                            <option value="Cambio de parabrisas">
+                                Cambio de parabrisas
+                            </option>
+
+                            <option value="Reparación de vidrios">
+                                Reparación de vidrios
+                            </option>
+
+                            <option value="Cauchos para vehículos">
+                                Cauchos para vehículos
+                            </option>
+
+                            <option value="Polarizado y nanocerámica">
+                                Polarizado y nanocerámica
+                            </option>
+
+                            <option value="Fabricación de vidrio para maquinaria">
+                                Fabricación de vidrio para maquinaria
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo campo-completo">
+
+                        <label for="mensaje">
+                            Cuéntanos qué necesitas
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Describe brevemente el servicio que necesitas..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="boton-agendar">
+                        Continuar por WhatsApp
+                    </button>
+
+
+                    <p id="mensaje-formulario"
+                       class="mensaje-formulario"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Parabrisas y Cauchos La Y
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
